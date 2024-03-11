@@ -17,7 +17,8 @@ process.on('SIGINT', () => http.close((error) => {
 }
 ))
 
-app.get('/', (_, res) => res.send('<h1><iframe width="560" height="315" src="https://www.youtube.com/embed/zKPhjkw3Y84?si=amoxLnuwZ4_kbmQs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></h1>'));
+app.get('/', (_, res) => res.send('<h1>oi</h1>'));
 
-http.listen(8080, () => console.log('Server is running on port 8080'));
+const port = 8080
+http.listen(port, () => console.log(`Server is running on port ${port}`));
 
